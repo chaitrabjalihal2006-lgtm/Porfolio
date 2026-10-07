@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chaitra B Jalihal - Software Engineer Portfolio. Brown Retro Theme (Canva EAGqblaY82k inspired) with Pixel Art aesthetics.">
+  <meta name="author" content="Chaitra B Jalihal">
+  <title>Chaitra B Jalihal | Creative Software Engineer Portfolio</title>
+
+  <!-- Google Fonts: Syne (Canva Bold Retro Serif/Grotesque), Press Start 2P & Silkscreen (Pixel Art), Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet: Brown Retro & Pixel Art Design System -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Retro Scanlines CRT Overlay for Ambient Screen Vibe -->
+  <div class="scanlines-overlay" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       SEMANTIC HEADER & TOP BAR
+       Contains: Brand logo, navigation links, theme toggle, and socials
+       ===================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <!-- Brand Logo / Creator Identifier -->
+      <a href="#hero" class="brand-badge" aria-label="Portfolio Home">
+        <div class="brand-pixel-icon" aria-hidden="true">👾</div>
+        <div>
+          <span class="brand-name">CHAITRA B JALIHAL</span>
+          <span class="brand-sub">SOFTWARE ENGINEER</span>
+        </div>
+      </a>
+
+      <!-- Primary Semantic Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">HERO</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#timeline" class="nav-link">TIMELINE</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#certifications" class="nav-link">AWARDS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Cluster: Verified Social Links & Night Mode Toggle -->
+      <div class="header-actions">
+
+        <!-- Clickable LinkedIn Link -->
+        <a 
+          href="https://www.linkedin.com/in/chaitra-basavaraj-jalihal-50a792392" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="header-social-link"
+          title="Visit Chaitra's LinkedIn Profile"
+        >
+          <span>💼</span> LINKEDIN
+        </a>
+
+        <!-- Clickable GitHub Link -->
+        <a 
+          href="https://github.com/chaitrabjalihal2006-Igtm" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="header-social-link"
+          title="Visit Chaitra's GitHub Profile"
+        >
+          <span>🐙</span> GITHUB
+        </a>
+
+        <!-- ===============================================================
+             PLACEHOLDER / COMPONENT: NIGHT MODE TOGGLE
+             Uses CSS media queries (prefers-color-scheme: dark) by default
+             with interactive click override
+             =============================================================== -->
+        <div class="theme-toggle-wrapper">
+          <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Toggle Browser Theme">
+            <span id="themeIcon">🌓</span>
+            <span id="themeText">THEME: AUTO</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       SEMANTIC MAIN WRAPPER
+       ===================================================================== -->
+  <main>
+
+    <!-- ===================================================================
+         SECTION: HERO (DEVELOPED - CANVA BROWN RETRO & PIXEL ART THEME)
+         Features:
+         - Theme: Brown Retro Theme Creative Portfolio (Canva EAGqblaY82k)
+         - Pixel Art design: 8-bit stepped frames, pixel badges, HUD meters
+         - Provided background image & photo
+         - Night mode media-query responsive palette
+         - Welcoming title, brief tagline, and clickable links
+         =================================================================== -->
+    <section id="hero" class="hero-section" aria-label="Hero Section">
+      <div class="hero-ambient-grid" aria-hidden="true"></div>
+
+      <div class="hero-wrapper">
+        
+        <!-- Left Column: Canva Style Retro Board with Dashed Callout & Typography -->
+        <div class="hero-canva-board">
+          
+          <!-- Canva Dashed Callout Box with Sparkles & Directional Badge -->
+          <div class="canva-dashed-frame">
+            
+            <!-- Anchor Dots from Canva Template -->
+            <div class="callout-dot callout-dot-left-top" aria-hidden="true"></div>
+            <div class="callout-dot callout-dot-left-mid" aria-hidden="true"></div>
+            <div class="callout-dot callout-dot-bottom" aria-hidden="true"></div>
+
+            <!-- Sparkle Stars (✦ ✧ ⋆) in pastel gold, peach, and mint -->
+            <span class="sparkle sparkle-1" aria-hidden="true">✦</span>
+            <span class="sparkle sparkle-2" aria-hidden="true">✧</span>
+            <span class="sparkle sparkle-3" aria-hidden="true">⋆</span>
+            <span class="sparkle sparkle-4" aria-hidden="true">✦</span>
+
+            <!-- Top Indicator Line & Badge from Canva Template -->
+            <div class="canva-badge-callout">
+              <span class="canva-callout-line">──────►</span>
+              <div class="canva-badge-box">
+                <span>PRESENTATION</span>
+                <span class="canva-badge-sub">// SOFTWARE DEV</span>
+              </div>
+            </div>
+
+            <!-- Bold Creative Portfolio Title (From Canva Template EAGqblaY82k) -->
+            <h1 class="hero-title-creative">Creative<br>Portfolio</h1>
+            
+            <!-- Subtitle with Creator Name in Pixel Art font -->
+            <div class="hero-name-subtitle">
+              &gt; CHAITRA BASAVARAJ JALIHAL
+            </div>
+
+            <!-- Brief Tagline (Canva Template description style) -->
+            <div class="canva-desc-wrapper">
+              <p class="canva-desc-text">
+                A brief overview of engineering architecture, embedded IoT solutions, core CS foundations, and interactive web craftsmanship.
+              </p>
+              <!-- Playful doodle airplane from Canva design -->
+              <span class="canva-doodle-plane" aria-hidden="true">✈️</span>
+            </div>
+
+            <!-- Pixel Art HUD Status Meters (Logic, Focus, CS EXP) -->
+            <div class="pixel-hud-panel" aria-label="Player Stats HUD">
+              <div class="hud-header">
+                <span>[ PLAYER 1: ACTIVE ]</span>
+                <span>LEVEL 24 COMPUTER SCIENCE</span>
+              </div>
+              <div class="hud-meters-container">
+                <div class="hud-row">
+                  <span class="hud-label">HP (LOGIC)</span>
+                  <div class="hud-bar-outer" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="hud-bar-fill hud-hp"></div>
+                  </div>
+                  <span>100/100</span>
+                </div>
+                <div class="hud-row">
+                  <span class="hud-label">MP (FOCUS)</span>
+                  <div class="hud-bar-outer" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                    <div class="hud-bar-fill hud-mp"></div>
+                  </div>
+                  <span>92/100</span>
+                </div>
+                <div class="hud-row">
+                  <span class="hud-label">EXP (CODE)</span>
+                  <div class="hud-bar-outer" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                    <div class="hud-bar-fill hud-xp"></div>
+                  </div>
+                  <span>88%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Action Buttons Cluster -->
+            <div class="hero-cta-cluster">
+              <a href="#projects" class="pixel-btn pixel-btn-brown">
+                <span>⚔️</span> VIEW QUESTS (PROJECTS)
+              </a>
+              <a href="Chaitra_B_Jalihal.pdf" target="_blank" class="pixel-btn pixel-btn-gold">
+                <span>📜</span> RESUME (PDF)
+              </a>
+              <a href="#contact" class="pixel-btn">
+                <span>📫</span> TRANSMIT MESSAGE
+              </a>
+            </div>
+
+          </div><!-- End canva-dashed-frame -->
+
+        </div><!-- End hero-canva-board -->
+
+        <!-- Right Column: Ornate Retro Picture Frame & Clickable Socials -->
+        <aside class="hero-portrait-card pixel-box" aria-label="Engineer Portrait Card">
+          
+          <div class="card-top-tag">
+            <span>ID: CBJ-2026</span>
+            <span class="status-indicator">
+              <span class="status-dot" aria-hidden="true"></span> ONLINE
+            </span>
+          </div>
+
+          <!-- Ornate Picture Frame with User's Provided Image -->
+          <div class="ornate-photo-frame">
+            <div class="frame-corner frame-corner-tl" aria-hidden="true"></div>
+            <div class="frame-corner frame-corner-tr" aria-hidden="true"></div>
+            <div class="frame-corner frame-corner-bl" aria-hidden="true"></div>
+            <div class="frame-corner frame-corner-br" aria-hidden="true"></div>
+
+            <img 
+              src="hero-background.jpg" 
+              alt="Chaitra B Jalihal - Software Engineer" 
+              class="provided-user-image"
+              loading="eager"
+            >
+          </div>
+
+          <!-- Character Identity -->
+          <div class="card-identity-block">
+            <h2 class="engineer-title">Chaitra B. Jalihal</h2>
+            <p class="engineer-role">B.E. COMPUTER SCIENCE &amp; ENGINEERING</p>
+          </div>
+
+          <!-- Clickable Social Media Links (Prompt Required) -->
+          <div class="card-social-clickable">
+            
+            <!-- Clickable LinkedIn -->
+            <a 
+              href="https://www.linkedin.com/in/chaitra-basavaraj-jalihal-50a792392" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="clickable-account-pill pill-linkedin"
+              aria-label="Connect on LinkedIn"
+            >
+              <span class="pill-icon">💼</span>
+              <span>CONNECT ON LINKEDIN</span>
+              <span class="pill-action-arrow">↗</span>
+            </a>
+
+            <!-- Clickable GitHub -->
+            <a 
+              href="https://github.com/chaitrabjalihal2006-Igtm" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="clickable-account-pill pill-github"
+              aria-label="Explore GitHub Code Repositories"
+            >
+              <span class="pill-icon">🐙</span>
+              <span>EXPLORE ON GITHUB</span>
+              <span class="pill-action-arrow">↗</span>
+            </a>
+
+          </div>
+
+        </aside>
+
+      </div><!-- End hero-wrapper -->
+    </section>
+
+    <!-- Sections Wrapper -->
+    <div class="main-sections-container">
+
+      <!-- =================================================================
+           SECTION: ABOUT (PLACEHOLDER)
+           Placeholder for developer biography, education, and values
+           ================================================================= -->
+      <section id="about" class="section-wrapper pixel-box" aria-labelledby="about-heading">
+        <div class="section-title-strip">
+          <h2 id="about-heading" class="section-title">
+            <span>📖</span> ABOUT THE ENGINEER
+          </h2>
+          <span class="section-badge-tag">QUEST 01: BIOGRAPHY</span>
+        </div>
+
+        <div class="placeholder-box">
+          <div class="placeholder-icon">🛡️</div>
+          <h3 class="placeholder-heading">[ PLACEHOLDER: ABOUT SECTION ]</h3>
+          <p class="placeholder-desc">
+            Computer Science and Engineering graduate from Adhichunchanagiri Institute of Technology, Chikkamagaluru (CGPA: 8.3).
+            Focused on building clean architectures, embedded road safety systems, and modern frontend styling.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🎓 EDUCATION</h4>
+              <p class="item-desc">B.E. Computer Science &amp; Engineering (2025–2026), Adhichunchanagiri Institute of Technology.</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">💡 CORE FOCUS</h4>
+              <p class="item-desc">Object-Oriented Programming, Operating Systems, Algorithm Design &amp; Embedded IoT.</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🌟 ACCOLADES</h4>
+              <p class="item-desc">Certified in CSS Web Styling, Generative AI (Google Cloud), and Copilot Prompt Engineering (Microsoft).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION: SKILLS (PLACEHOLDER)
+           Placeholder for programming languages, frontend, backend & core CS
+           ================================================================= -->
+      <section id="skills" class="section-wrapper pixel-box" aria-labelledby="skills-heading">
+        <div class="section-title-strip">
+          <h2 id="skills-heading" class="section-title">
+            <span>⚡</span> SKILL INVENTORY &amp; ARSENAL
+          </h2>
+          <span class="section-badge-tag">QUEST 02: CAPABILITIES</span>
+        </div>
+
+        <div class="placeholder-box">
+          <div class="placeholder-icon">🔮</div>
+          <h3 class="placeholder-heading">[ PLACEHOLDER: SKILLS SECTION ]</h3>
+          <p class="placeholder-desc">
+            Inventory of programming tools, development environments, and engineering proficiencies.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">💻 PROGRAMMING</h4>
+              <p class="item-desc">Java, Python, C Programming</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🎨 FRONTEND &amp; UI</h4>
+              <p class="item-desc">CSS3 (Certified), Semantic HTML5, Responsive Pixel Art Design</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">⚙️ BACKEND &amp; CORE</h4>
+              <p class="item-desc">Java Backend, Object-Oriented Programming (OOPs), Operating Systems</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🤖 AI &amp; EMBEDDED</h4>
+              <p class="item-desc">Generative AI, GitHub Copilot Prompting, Arduino UNO Embedded Hardware</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION: TIMELINE (PLACEHOLDER)
+           Placeholder for career trajectory, education milestones & projects
+           ================================================================= -->
+      <section id="timeline" class="section-wrapper pixel-box" aria-labelledby="timeline-heading">
+        <div class="section-title-strip">
+          <h2 id="timeline-heading" class="section-title">
+            <span>⏳</span> ADVENTURE TIMELINE
+          </h2>
+          <span class="section-badge-tag">QUEST 03: ROADMAP</span>
+        </div>
+
+        <div class="placeholder-box">
+          <div class="placeholder-icon">🗺️</div>
+          <h3 class="placeholder-heading">[ PLACEHOLDER: TIMELINE SECTION ]</h3>
+          <p class="placeholder-desc">
+            Chronological roadmap tracking academic milestones, specialized training, and practical engineering sprints.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">📅 2025 – 2026</h4>
+              <p class="item-desc">Final Year B.E. Computer Science &amp; Engineering with 8.3 CGPA at AIT Chikkamagaluru.</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">📅 OCTOBER 2026</h4>
+              <p class="item-desc">Earned Google Cloud GenAI &amp; Microsoft Copilot Prompt Engineering credentials.</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">📅 IPBL SPRINT</h4>
+              <p class="item-desc">3-Month embedded system research &amp; hardware implementation on Arduino UNO.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION: PROJECTS (PLACEHOLDER)
+           Placeholder for embedded systems, software builds, and portfolio demos
+           ================================================================= -->
+      <section id="projects" class="section-wrapper pixel-box" aria-labelledby="projects-heading">
+        <div class="section-title-strip">
+          <h2 id="projects-heading" class="section-title">
+            <span>⚔️</span> COMPLETED QUESTS (PROJECTS)
+          </h2>
+          <span class="section-badge-tag">QUEST 04: BUILDS</span>
+        </div>
+
+        <div class="placeholder-box">
+          <div class="placeholder-icon">💎</div>
+          <h3 class="placeholder-heading">[ PLACEHOLDER: PROJECTS SECTION ]</h3>
+          <p class="placeholder-desc">
+            Showcase of engineering applications, embedded systems, and interactive software modules.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🚨 ARDUINO UNO NIGHT ACCIDENT PREVENTION</h4>
+              <p class="item-desc">Embedded road safety prototype engineered on Arduino UNO to mitigate nighttime accidents through proactive sensing.</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🎨 CANVA RETRO &amp; PIXEL ART PORTFOLIO</h4>
+              <p class="item-desc">Interactive portfolio blending Canva's Brown Retro Theme with 8-bit pixel art aesthetics and CSS media-query theme detection.</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">☕ JAVA OOP CORE SYSTEM</h4>
+              <p class="item-desc">Robust application architecture implementing object-oriented paradigms, inheritance hierarchies, and clean code principles.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION: CERTIFICATIONS & ACHIEVEMENTS (PLACEHOLDER)
+           Placeholder for verified credentials and diplomas
+           ================================================================= -->
+      <section id="certifications" class="section-wrapper pixel-box" aria-labelledby="certifications-heading">
+        <div class="section-title-strip">
+          <h2 id="certifications-heading" class="section-title">
+            <span>🏆</span> TROPHY VAULT (CERTIFICATIONS)
+          </h2>
+          <span class="section-badge-tag">QUEST 05: CREDENTIALS</span>
+        </div>
+
+        <div class="placeholder-box">
+          <div class="placeholder-icon">👑</div>
+          <h3 class="placeholder-heading">[ PLACEHOLDER: CERTIFICATIONS SECTION ]</h3>
+          <p class="placeholder-desc">
+            Verified course declarations of completion powered by Google Cloud, Microsoft, and Simplilearn SkillUp.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">☁️ GOOGLE CLOUD</h4>
+              <p class="item-desc">Introduction to Generative AI • Certificate Code: 10842524 (Issued 5th Oct 2026)</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🤖 MICROSOFT</h4>
+              <p class="item-desc">Introduction to Prompt Engineering with GitHub Copilot • Certificate Code: 10842488 (Issued 5th Oct 2026)</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🎨 WEB DEVELOPMENT</h4>
+              <p class="item-desc">CSS Certification demonstrating foundational mastery of frontend styling and responsive web design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION: CONTACT (PLACEHOLDER)
+           Placeholder for contact inquiry form, direct channels, and networking
+           ================================================================= -->
+      <section id="contact" class="section-wrapper pixel-box" aria-labelledby="contact-heading">
+        <div class="section-title-strip">
+          <h2 id="contact-heading" class="section-title">
+            <span>📫</span> TRANSMIT MESSAGE (CONTACT)
+          </h2>
+          <span class="section-badge-tag">QUEST 06: COMMS</span>
+        </div>
+
+        <div class="placeholder-box">
+          <div class="placeholder-icon">📬</div>
+          <h3 class="placeholder-heading">[ PLACEHOLDER: CONTACT SECTION ]</h3>
+          <p class="placeholder-desc">
+            Connect for engineering roles, software projects, or technical collaboration. All links are live and clickable below.
+          </p>
+          <div class="placeholder-grid">
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">✉️ EMAIL</h4>
+              <p class="item-desc">
+                <a href="mailto:chaitrabjalihal2006@gmail.com" style="color: inherit; text-decoration: underline;">chaitrabjalihal2006@gmail.com</a>
+              </p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">📞 PHONE</h4>
+              <p class="item-desc">+91 7618701258</p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">💼 LINKEDIN</h4>
+              <p class="item-desc">
+                <a href="https://www.linkedin.com/in/chaitra-basavaraj-jalihal-50a792392" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">chaitra-basavaraj-jalihal-50a792392</a>
+              </p>
+            </div>
+            <div class="placeholder-card-item">
+              <h4 class="item-heading">🐙 GITHUB</h4>
+              <p class="item-desc">
+                <a href="https://github.com/chaitrabjalihal2006-Igtm" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">chaitrabjalihal2006-Igtm</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- End main-sections-container -->
+
+  </main>
+
+  <!-- =====================================================================
+       SEMANTIC FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <p class="footer-copy">© 2026 CHAITRA B JALIHAL • SOFTWARE ENGINEER</p>
+        <p class="footer-theme-note">&gt; THEME: CANVA BROWN RETRO (EAGqblaY82k) × PIXEL ART ARCADE | PRESS START TO CONTINUE</p>
+      </div>
+
+      <!-- Clickable Footer Social Links -->
+      <div class="footer-social-links">
+        <a 
+          href="https://www.linkedin.com/in/chaitra-basavaraj-jalihal-50a792392" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="footer-link-btn"
+          title="Open Chaitra's LinkedIn"
+        >
+          <span>💼</span> LINKEDIN
+        </a>
+        <a 
+          href="https://github.com/chaitrabjalihal2006-Igtm" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="footer-link-btn"
+          title="Open Chaitra's GitHub"
+        >
+          <span>🐙</span> GITHUB
+        </a>
+        <a 
+          href="mailto:chaitrabjalihal2006@gmail.com" 
+          class="footer-link-btn"
+          title="Send email to Chaitra"
+        >
+          <span>✉️</span> EMAIL
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript: Media Query Synchronization & 8-Bit Audio Synth -->
+  <script src="script.js"></script>
+</body>
+</html>
